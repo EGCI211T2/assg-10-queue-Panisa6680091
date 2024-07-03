@@ -26,16 +26,9 @@ void Queue::enqueue(int x)
     {
       tailPtr->set_next(new_node);
       tailPtr=tailPtr->get_next();
-    } 
+    }
     
     size++;
-
-    //1. connect & Change tail
-
-    //2. (may be) change head  when the queue is empty
-
-    //3. increase size 
-   
   }
 }
 
@@ -47,12 +40,10 @@ int Queue::dequeue()
     int value=t->get_value();
     
     headPtr = headPtr->get_next();
-    size--;
     
     if(headPtr==NULL) tailPtr=headPtr;
-
-     /* Add head and tail for me please */
-          
+    
+    --size;
     delete t;
     return value;
   }
