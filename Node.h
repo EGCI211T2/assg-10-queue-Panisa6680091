@@ -12,7 +12,6 @@ public:
 };
 typedef NODE* NodePtr;
 
-
 NODE::NODE(int x){
     data=x;
     nextPtr=NULL;
@@ -28,19 +27,12 @@ int NODE::get_value(){
 
 }
 
-
 void NODE::set_next(NODE *t){
      nextPtr=t;
-
 }
+
 NODE::~NODE(){
-     cout<<"deleting "<<data<<endl;
-
+     //cout<<"deleting "<<data<<endl;
 }
-
-
-
-
-
 
 #endif
