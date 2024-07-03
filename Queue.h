@@ -74,7 +74,7 @@ Queue::~Queue()
     int value, i;
     NodePtr t;
 
-    cout<<"Clearing Queue"<<endl;
+    cout<<"Clearing queue"<<endl;
 
     for(i=0; i<size; i++)
     {
